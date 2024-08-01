@@ -9,6 +9,7 @@ pipeline{
         stage('add files'){
             steps {
                 sh "touch ~/jenkins-demo/file1.txt || true"
+// don't need || true for a file, only for a directory.
             }
         }
     }
