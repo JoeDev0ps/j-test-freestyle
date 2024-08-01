@@ -12,5 +12,10 @@ pipeline{
 // don't need || true for a file, only for a directory.
             }
         }
+        stage ('run script'){
+            steps {
+                sh "sh jenkins.sh"
+            }
+        }
     }
 }
